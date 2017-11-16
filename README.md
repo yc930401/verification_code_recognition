@@ -16,9 +16,17 @@ In this project, I use opencv to generate verification code, and then build a CN
 ## Result
 
 #### Verification code: 
-![captcha](/code/39839.png) </br>
+![captcha](/39839.png) 
+![captcha](/13045.png) </br>
+
+#### Layer accuracy:
+![captcha](/layer_accuracy.png) 
 
 #### Model accuracy:
+![captcha](/final_accuracy.png) 
+
+#### Test result:
+![captcha](/test_result.png)
 
 
 ## References:
