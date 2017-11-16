@@ -45,6 +45,3 @@ def save_img(img, label):
     # save image
     with open("{}.png".format(label), "wb") as f:
         img.save(f, format="png")
-
-img, label = get_data()
-save_img(img, label)

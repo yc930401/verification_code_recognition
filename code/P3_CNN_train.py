@@ -1,5 +1,6 @@
+import os.path
 import numpy as np
-from keras.models import Model
+from keras.models import Model, load_model
 from keras.layers import Dense, Dropout, Activation, Flatten, Input
 from keras.layers import Conv2D, MaxPooling2D
 from keras.utils import np_utils
@@ -103,7 +104,10 @@ def calculate_acc(test_data_size, predictions, real_labels):
 
 if __name__ == '__main__':
 
-    model = CNN_model()
+    if os.path.exists('model_CNN.h5'):
+        model = load_model('model_CNN.h5')
+    else:
+        model = CNN_model()
     count = 0
     while count < 1000:
         x_train, y_train = get_data(train_data_size)
