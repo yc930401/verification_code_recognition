@@ -1,4 +1,4 @@
-# captcha_recognition_CNN
+# Captcha_recognition_CNN
 
 In this project, I use PIL to generate verification code, and then build a CNN model to recognize the code. 
 
